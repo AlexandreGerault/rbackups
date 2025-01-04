@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "id": "mysql-1",
+      "driver": "mysql",
+      "host": "mysql",
+      "port": 3306,
+      "username": "root",
+      "password": "root",
+      "database": "mei_laravel"
+    }
+  ],
+  "storages": [
+    {
+      "id": "aws",
+      "driver": "s3",
+      "access_key": "key",
+      "secret_access": "secret",
+      "region": "eu-west",
+      "bucket": "backups"
+    }
+  ],
+  "exports": [
+    {
+      "id": "laravel-data",
+      "source": "mysql-1",
+      "storage": "aws"
+    }
+  ]
+}

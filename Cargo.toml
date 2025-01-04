@@ -1,0 +1,11 @@
+ [package]
+name = "rbackups"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aws-config = { version = "1.1.7", features = ["behavior-version-latest"] }
+aws-sdk-s3 = "1.66.0"
+tokio = { version = "1", features = ["full"] }
+async-trait = "0.1.83"
+mysql = "25.0.1"
